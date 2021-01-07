@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean class="com.springcore.ci.Certi" name="certi"
+		c:name="Java is vaery great" />
+
+
+	<bean class="com.springcore.ci.Person" name="person">
+
+		<constructor-arg value="Nakul" />
+		<constructor-arg value="12" type="int" />
+		<constructor-arg ref="certi" />
+		<constructor-arg>
+			<list>
+				<value>Delhi</value>
+				<value>Lucknow</value>
+				<value>Jaipur</value>
+				<null />
+			</list>
+
+		</constructor-arg>
+
+	</bean>
+	<bean class="com.springcore.ci.Addition" name="add">
+		<constructor-arg value="16" type="double" index="1"/>
+		<constructor-arg value="12" type="double" index="0"/>
+	</bean>
+</beans>

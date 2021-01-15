@@ -28,9 +28,9 @@
 		name="ds">
 		<property name="driverClassName"
 			value="com.mysql.cj.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://127.0.0.1:3306/dbz" />
-		<property name="username" value="Nakul" />
-		<property name="password" value="nakul@123" />
+		<property name="url" value="jdbc:mysql://127.0.0.1:3306/database_name" />
+		<property name="username" value="USER_NAME" />
+		<property name="password" value="USER_PASSWORD" />
 	</bean>
 
 	<bean

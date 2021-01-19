@@ -1,0 +1,14 @@
+body{
+	background: gainsboro;
+}
+
+.container{
+	background: white;
+	padding: 40px;
+	font-family: 'Roboto';
+
+}
+
+.profile{
+	border-radius: 50%;
+}
